@@ -58,7 +58,7 @@ $app->post('/callback', function (Request $request) use ($app) {
                         "attachment" => [
                           "type" => "image",
                           "payload" => [
-                            "url" => "https://cl.ly/3t2l03222i3X/972314_204219473071412_1628735067_n.jpg"
+                            "url" => "https://cloud.githubusercontent.com/assets/19908224/18405570/df90017e-76a7-11e6-9b3f-a9b83157d529.jpg"
                           ]
                         ]
                     ],
