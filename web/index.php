@@ -45,7 +45,16 @@ $app->post('/callback', function (Request $request) use ($app) {
                         'id' => $from,
                     ],
                     'message' => [
-                        // 'text' => sprintf('%s? Just Do It ✔', $text),
+                        'text' => sprintf('%s? Just Do It ✔', $text),
+                    ],
+                ];
+                $client->request('POST', $path, ['json' => $json]);
+
+                $json = [
+                    'recipient' => [
+                        'id' => $from,
+                    ],
+                    'message' => [
                         "attachment" => [
                           "type" => "image",
                           "payload" => [
