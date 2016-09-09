@@ -45,12 +45,12 @@ $app->post('/callback', function (Request $request) use ($app) {
                         'id' => $from,
                     ],
                     'message' => [
-                        'text' => sprintf('%s? Just Do It ✔', $text),
+                        // 'text' => sprintf('%s? Just Do It ✔', $text),
                         "attachment" => [
                           "type" => "image",
                           "payload" => [
                             "url" => "https://cl.ly/3t2l03222i3X/972314_204219473071412_1628735067_n.jpg"
-                          ]                      
+                          ]
                         ]
                     ],
                 ];
